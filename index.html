@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voltcore - Legal</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(180deg, #06061a 0%, #0a0a2e 50%, #06061a 100%);
+            color: #e0e8ff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        .logo {
+            font-size: 64px;
+            font-weight: 900;
+            letter-spacing: 8px;
+            background: linear-gradient(135deg, #00f0ff 0%, #ff00aa 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+            text-shadow: 0 0 30px rgba(0, 240, 255, 0.5);
+            animation: glow 3s ease-in-out infinite;
+        }
+        @keyframes glow {
+            0%, 100% { filter: drop-shadow(0 0 20px rgba(0, 240, 255, 0.4)); }
+            50% { filter: drop-shadow(0 0 30px rgba(255, 0, 170, 0.6)); }
+        }
+        .subtitle {
+            color: #8a9bc4;
+            font-size: 14px;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .link-card {
+            display: block;
+            padding: 28px 32px;
+            background: rgba(20, 20, 46, 0.6);
+            border: 2px solid rgba(0, 240, 255, 0.3);
+            border-radius: 16px;
+            text-decoration: none;
+            color: #e0e8ff;
+            transition: all 0.3s ease;
+            text-align: left;
+        }
+        .link-card:hover {
+            border-color: #00f0ff;
+            background: rgba(0, 240, 255, 0.08);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 240, 255, 0.2);
+        }
+        .link-card h2 {
+            color: #00f0ff;
+            font-size: 22px;
+            margin-bottom: 6px;
+            letter-spacing: 1px;
+        }
+        .link-card p {
+            color: #8a9bc4;
+            font-size: 14px;
+        }
+        .link-arrow {
+            float: right;
+            font-size: 24px;
+            color: #00f0ff;
+            margin-top: -4px;
+        }
+        footer {
+            margin-top: 60px;
+            color: #6a7ba0;
+            font-size: 13px;
+        }
+        footer a { color: #00f0ff; text-decoration: none; }
+        .badge {
+            display: inline-block;
+            background: rgba(255, 215, 0, 0.15);
+            border: 1px solid rgba(255, 215, 0, 0.4);
+            color: #ffd700;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-top: 12px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="logo">VOLTCORE</div>
+    <div class="subtitle">Power the Core</div>
+
+    <div class="links">
+        <a class="link-card" href="/privacy">
+            <span class="link-arrow">→</span>
+            <h2>Privacy Policy</h2>
+            <p>How we handle (and don't collect) your data</p>
+        </a>
+
+        <a class="link-card" href="/terms">
+            <span class="link-arrow">→</span>
+            <h2>Terms of Service</h2>
+            <p>Rules and conditions for using the app</p>
+        </a>
+    </div>
+
+    <footer>
+        <div class="badge">100% FREE · NO ADS · NO IAP</div>
+        <p style="margin-top: 20px;">© 2026 Burak Erol</p>
+        <p style="margin-top: 8px;">
+            <a href="mailto:[YOUR_EMAIL_HERE]">Contact</a>
+        </p>
+    </footer>
+</div>
+</body>
+</html>
